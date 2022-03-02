@@ -1,5 +1,15 @@
 import React from "react";
-import Policy from "./Policy";
+import "../../assets/css/compiled-css/home.css";
+import PolicyTabs from "./PolicyTabs";
+import Panel from "./Panel";
+const data = [
+    { id: "1", tabTitle: "Individual Insurance", img_name: "Individual1", tabContent: "1" },
+    { id: "2", tabTitle: "Group Insurance",img_name: "Group-Insurance", tabContent: "2" },
+    { id: "3", tabTitle: "Commercial Insurance",img_name: "Commercial-Insurance", tabContent: "3" },
+    { id: "4", tabTitle: "Package Insurance",img_name: "Package-Insurance", tabContent: "4" },
+    { id: "5", tabTitle: "Affinity Insurance",img_name: "Affinity-Insurance", tabContent: "5" },
+    { id: "6", tabTitle: "Rural & Agricultural Insurance",img_name: "Rural-&-Agricultural-Insurance", tabContent: "6" },
+];
 function Home() {
     return (
         <>
@@ -27,7 +37,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <Policy />
+            <PolicyTabs data={data}/>
             <section className="home_about">
                 <div className="container">
                     <div className="row">
