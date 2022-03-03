@@ -1,0 +1,98 @@
+@import "./variable";
+header {
+    height: 78px;
+    background: #fff;
+    border-bottom: 1px solid #f3e9e9;
+    .nav-area {
+        @include flex-property(row);
+        max-width: $container-width;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        @include to-md {
+            max-width: 100%;
+            width: 100%;
+        }
+        @include container-wid {
+            width: 100%;
+            padding: 0 20px;
+        }
+        .nav-logo {
+            img {
+                height: 40px;
+                margin-right: 20px;
+            }
+        }
+        .menu {
+            @include flex-property(row);
+            align-items: center;
+            text-align: center;
+            height: 78px;
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                vertical-align: top;
+                display: inline-block;
+                border-radius: 6px;
+                li {
+                    position: relative;
+                    span {
+                        display: block;
+                        padding: 0.5rem 0.8rem;
+                        position: relative;
+                        line-height: 1;
+                        color: #000;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+            > ul {
+                > li {
+                    float: left;
+                    margin-right: 1px;
+                    :hover {
+                        > a {
+                            color: $red-color;
+                        }
+                    }
+                    &:hover {
+                        > a {
+                            color: $red-color;
+                        }
+                    }
+                    > .dropdown.show {display: block;}
+                    > .dropdown {
+                        display: none;
+                        border-top: 1px solid #ec3237;
+                        box-shadow: 2px 5px 9px #000000bf;
+                        background: #fff;
+                        position: absolute;
+                        white-space: nowrap;
+                        z-index: 2;
+                        border-radius: 0;
+                        li {
+                            a {
+                                padding: .5em 2em .5em .8em;
+                                border-top: 1px solid #e8e3e7;
+                                display: block;
+                                line-height: 18px;
+                                text-align: left;
+                            }
+                            &:hover {
+                                a {
+                                    color: #000;
+                                    background: #d9d9d9;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
