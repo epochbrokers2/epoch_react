@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Navigation from "./Navigation";
 
 const Header = () => {
     return (
@@ -10,6 +11,7 @@ const Header = () => {
                         <img src="/images/img/logo.png" alt="Epoch Logo" />
                     </a>
                     <Navbar />
+                    {/* <Navigation /> */}
                 </div>
             </div>
         </header>

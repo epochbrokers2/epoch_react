@@ -5,6 +5,10 @@ import DropDown from './DropDown'
 const MenuItems = ({items, depthLevel}) => {
     // console.log(items);
     const [dropdown, setDropdown] = useState(false);
+    const handleDropdown = () => {
+        console.log("Clicked")
+        setDropdown((prev) => !prev)
+    }
     return (
         <li className='menu-items'>
             {
@@ -12,12 +16,12 @@ const MenuItems = ({items, depthLevel}) => {
                     <>
                         <span aria-haspopup="menu" 
                             aria-expanded={dropdown ? true : false} 
-                            onClick={() => setDropdown((prev) => !prev)}
+                            onClick={handleDropdown}
                             >
                             {items.title}{" "}
                             {depthLevel > 0 ? <i>&darr;</i> : <i className="arrow" />}
                         </span>
-                        <DropDown submenus={items.submenu} depthLevel={depthLevel} dropdown={dropdown}  />
+                        <DropDown submenus={items.submenu} depthLevel={depthLevel} dropdown={dropdown} click={handleDropdown}  />
                         
                     </>
                 ) : (
