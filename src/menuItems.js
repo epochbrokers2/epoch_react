@@ -51,11 +51,7 @@ export const menuItems = [
                     {
                         title: "Machinery Breakdown Policy"
                     },
-                ]
-            },
-            {
-                title: "Engineering Insurance",
-                submenu: [
+
                     {
                         title: "Griha Raksha Policy"
                     },
@@ -73,6 +69,17 @@ export const menuItems = [
                     },
                     {
                         title: "Machinery Breakdown Policy"
+                    },
+                ]
+            },
+            {
+                title: "Engineering Insurance",
+                submenu: [
+                    {
+                        title: "General Insurance Companies",
+                    },
+                    {
+                        title: "Life Insurance Companies",
                     },
                 ]
             },
@@ -80,37 +87,22 @@ export const menuItems = [
                 title: "Employee's/People Insurance",
                 submenu: [
                     {
-                        title: "Griha Raksha Policy"
+                        title: "Overview",
                     },
                     {
-                        title: "Sookshma Udyam Suraksha"
+                        title: "Our Services",
                     },
                     {
-                        title: "Laghu Udyam Suraksha"
+                        title: "Why EPOCH",
                     },
                     {
-                        title: "Fire Policy"
-                    },
-                    {
-                        title: "Fire Loss of Profit Policy"
-                    },
-                    {
-                        title: "Machinery Breakdown Policy"
+                        title: "EPOCH Advantage",
                     },
                 ]
             },
             {
                 title: "Liability - Financial Lines Insurance",
                 submenu: [
-                    {
-                        title: "Griha Raksha Policy"
-                    },
-                    {
-                        title: "Sookshma Udyam Suraksha"
-                    },
-                    {
-                        title: "Laghu Udyam Suraksha"
-                    },
                     {
                         title: "Fire Policy"
                     },
@@ -125,9 +117,6 @@ export const menuItems = [
             {
                 title: "Liability - Casuality Lines Insurance",
                 submenu: [
-                    {
-                        title: "Griha Raksha Policy"
-                    },
                     {
                         title: "Sookshma Udyam Suraksha"
                     },
@@ -149,29 +138,6 @@ export const menuItems = [
                 title: "Marine Insurance"
             },
             {
-                title: "Marine &amp; Hull Insurance",
-                submenu: [
-                    {
-                        title: "Griha Raksha Policy"
-                    },
-                    {
-                        title: "Sookshma Udyam Suraksha"
-                    },
-                    {
-                        title: "Laghu Udyam Suraksha"
-                    },
-                    {
-                        title: "Fire Policy"
-                    },
-                    {
-                        title: "Fire Loss of Profit Policy"
-                    },
-                    {
-                        title: "Machinery Breakdown Policy"
-                    },
-                ]
-            },
-            {
                 title: "Aircraft Insurance"
             },
         ]
@@ -180,6 +146,114 @@ export const menuItems = [
         title: "Industries",
         type: "big",
         submenu: [
+            {
+                title: "Agriculture"
+            },
+            {
+                title: "Automobile"
+            },
+            {
+                title: "Aviation"
+            },
+            {
+                title: "Banking & Financial Services"
+            },
+            {
+                title: "Chemicals & Agro Products"
+            },
+            {
+                title: "Construction"
+            },
+            {
+                title: "Agriculture"
+            },
+            {
+                title: "Automobile"
+            },
+            {
+                title: "Aviation"
+            },
+            {
+                title: "Banking & Financial Services"
+            },
+            {
+                title: "Chemicals & Agro Products"
+            },
+            {
+                title: "Construction"
+            },
+            {
+                title: "Agriculture"
+            },
+            {
+                title: "Automobile"
+            },
+            {
+                title: "Aviation"
+            },
+            {
+                title: "Banking & Financial Services"
+            },
+            {
+                title: "Chemicals & Agro Products"
+            },
+            {
+                title: "Construction"
+            },
+            {
+                title: "Agriculture"
+            },
+            {
+                title: "Automobile"
+            },
+            {
+                title: "Aviation"
+            },
+            {
+                title: "Banking & Financial Services"
+            },
+            {
+                title: "Chemicals & Agro Products"
+            },
+            {
+                title: "Construction"
+            },
+            {
+                title: "Agriculture"
+            },
+            {
+                title: "Automobile"
+            },
+            {
+                title: "Aviation"
+            },
+            {
+                title: "Banking & Financial Services"
+            },
+            {
+                title: "Chemicals & Agro Products"
+            },
+            {
+                title: "Construction"
+            },
+            {
+                title: "Agriculture"
+            },
+            {
+                title: "Automobile"
+            },
+            {
+                title: "Aviation"
+            },
+            {
+                title: "Banking & Financial Services"
+            },
+            {
+                title: "Chemicals & Agro Products"
+            },
+            {
+                title: "Construction"
+            },
             {
                 title: "Agriculture"
             },

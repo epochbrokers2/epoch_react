@@ -1,5 +1,6 @@
 import React from "react";
 // import { useState } from "react";
+import MenuItems from "./MenuItems";
 
 const Dropdown = ({ submenus, dropdown, depthLevel, click }) => {
     depthLevel = depthLevel + 1;
@@ -7,43 +8,10 @@ const Dropdown = ({ submenus, dropdown, depthLevel, click }) => {
     return (
         <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : ""}`}>
             {submenus.map((submenu, index) => (
-                <li key={index} className="menu-items">
-                    <a href="/#">{submenu.title}</a>
-                </li>
-                // <li key={index} className="menu-items">
-                //     {submenu.submenu ? (
-                //         <>
-                //             <span
-                //                 type="button"
-                //                 aria-haspopup="sub-menu"
-                //                 aria-expanded={dropdown ? "true" : "false"}
-                //                 onClick={click}
-                //             >
-                //                 {submenu.title}{" "}
-                //                 {depthLevel > 0 ? (
-                //                     <i>&darr;</i>
-                //                 ) : (
-                //                     <i className="arrow" />
-                //                 )}
-                //             </span>
-                //             <ul
-                //                 className={`dropdown ${dropdownClass} ${
-                //                     dropdown ? "show" : ""
-                //                 }`}
-                //             >
-                //                 {submenu.submenu.map((submenu, index) => (
-                //                     <li key={index} className="menu-items">
-                //                         <a href="/#">{submenu.title}</a>
-                //                     </li>
-                //                 ))}
-                //             </ul>
-                //         </>
-                //     ) : (
-                //         <a href="/#">{submenu.title}</a>
-                //     )}
-                // </li>
+                <MenuItems items={submenu} key={index} depthLevel={depthLevel}  />
             ))}
         </ul>
+        
     );
 };
 
