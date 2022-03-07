@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 
 function HomePolicySlider(props) {
-    console.log(' test '+props.sliderNumber)
+    // console.log(' test '+props.sliderNumber)
 
     return (
        <div>

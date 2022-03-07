@@ -1,7 +1,6 @@
 import React from "react";
 
 function MultiDropdown({ submenus, multiDropdown, depthLevel }) {
-    console.log(submenus);
     depthLevel = depthLevel + 1;
     const dropdownClass = depthLevel > 1 ? "dropdown-submenu" : "";
     return (

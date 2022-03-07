@@ -6,6 +6,7 @@ function PolicyTabs(props) {
     const listTitles = props.data.map((item) => (
         <div
             onClick={() => setVisibleTab(item.id)}
+            key={item.id}
             className={
                 visibleTab === item.id
                     ? "tab-title tab-title--active"
@@ -22,7 +23,7 @@ function PolicyTabs(props) {
     ));
 
     const listContent = props.data.map((item) => (
-        <HomePolicySlider sliderNumber={item.tabContent} style={visibleTab === item.id ? {} : { display: "none" }} /> 
+        <HomePolicySlider sliderNumber={item.tabContent} key={item.id} style={visibleTab === item.id ? {} : { display: "none" }} /> 
     ));
 
     return (

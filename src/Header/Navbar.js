@@ -1,10 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import { menuItems } from "../menuItems";
 import MenuItems from "./MenuItems";
-import App from "../App";
-import Page from "./Page";
 
 export default function Navbar({ smallNavOpen }) {
     return (
@@ -24,12 +22,6 @@ export default function Navbar({ smallNavOpen }) {
                         })}
                     </ul>
                 </nav>
-            </Router>
-            <Router>
-                <Routes>
-                    <Route path="/page/:slug" element={<Page />} />
-                    <Route  element={<App />} />
-                </Routes>
             </Router>
         </>
     );

@@ -10,7 +10,7 @@ const Header = () => {
             <div className="navcontainer">
                 <div className="nav-area">
                     <div className="nav-area-top">
-                        <a href="/" className="nav-logo">
+                        <a to="/" className="nav-logo">
                             <img src="/images/img/logo.png" alt="Epoch Logo" />
                         </a>
                         <div
