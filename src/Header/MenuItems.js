@@ -1,12 +1,12 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import DropDown from "./DropDown";
+import { Link } from "react-router-dom";
 
 const MenuItems = ({ items, depthLevel }) => {
-    // console.log(items);
+    console.log(items.url);
     const [dropdown, setDropdown] = useState(false);
     const handleDropdown = () => {
-        console.log("Clicked");
         setDropdown((prev) => !prev);
     };
     let ref = useRef();
@@ -28,11 +28,11 @@ const MenuItems = ({ items, depthLevel }) => {
         };
     }, [dropdown]);
     const onMouseEnter = () => {
-        window.innerWidth > 960 && setDropdown(true);
+        window.innerWidth > 1100 && setDropdown(true);
     };
 
     const onMouseLeave = () => {
-        window.innerWidth > 960 && setDropdown(false);
+        window.innerWidth > 1100 && setDropdown(false);
     };
     return (
         <li ref={ref}
@@ -49,20 +49,21 @@ const MenuItems = ({ items, depthLevel }) => {
                     >
                         {items.title}{" "}
                         {depthLevel > 0 ? (
-                            <i>&darr;</i>
+                            <span className="icon-right_arrow"></span>
                         ) : (
-                            <i className="arrow" />
+                            <span className="icon-down_arrow"></span>
                         )}
                     </span>
                     <DropDown
                         submenus={items.submenu}
+                        type={items.type}
                         depthLevel={depthLevel}
                         dropdown={dropdown}
                         click={handleDropdown}
                     />
                 </>
             ) : (
-                <a href="/#">{items.title}</a>
+                <Link to={items.url}>{items.title}</Link>
             )}
         </li>
     );

@@ -13,7 +13,7 @@ function PolicyTabs(props) {
             }
         >
             <div className="img-div">
-                <img src={`images/img/policy/${item.img_name}.webp`} />
+                <img src={`images/img/policy/${item.img_name}.webp`} alt="Tab" />
             </div>
             <div className="tab-title_head">{item.tabTitle}</div>
             <div className="tab-title_buy">Compare / Buy</div>

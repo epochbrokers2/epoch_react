@@ -4,15 +4,19 @@ export const menuItems = [
         submenu: [
             {
                 title: "Overview",
+                url: "overview"
             },
             {
                 title: "Our Services",
+                url: "our-services"
             },
             {
                 title: "Why EPOCH",
+                url: "why-epch"
             },
             {
                 title: "EPOCH Advantage",
+                url: "epoch-advantage"
             },
         ],
     },
@@ -21,9 +25,11 @@ export const menuItems = [
         submenu: [
             {
                 title: "General Insurance Companies",
+                url: "op-1"
             },
             {
                 title: "Life Insurance Companies",
+                url: "op-2"
             },
         ]
     },
@@ -34,41 +40,53 @@ export const menuItems = [
                 title: "Property Insurance",
                 submenu: [
                     {
-                        title: "Griha Raksha Policy"
+                        title: "Griha Raksha Policy",
+                        url: "pi-1"
                     },
                     {
-                        title: "Sookshma Udyam Suraksha"
+                        title: "Sookshma Udyam Suraksha",
+                        url: "pi-2"
                     },
                     {
-                        title: "Laghu Udyam Suraksha"
+                        title: "Laghu Udyam Suraksha",
+                        url: "pi-3"
                     },
                     {
-                        title: "Fire Policy"
+                        title: "Fire Policy",
+                        url: "pi-4"
                     },
                     {
-                        title: "Fire Loss of Profit Policy"
+                        title: "Fire Loss of Profit Policy",
+                        url: "pi-5"
                     },
                     {
-                        title: "Machinery Breakdown Policy"
+                        title: "Machinery Breakdown Policy",
+                        url: "pi-6"
                     },
 
                     {
-                        title: "Griha Raksha Policy"
+                        title: "Griha Raksha Policy",
+                        url: "pi-7"
                     },
                     {
-                        title: "Sookshma Udyam Suraksha"
+                        title: "Sookshma Udyam Suraksha",
+                        url: "pi-8"
                     },
                     {
-                        title: "Laghu Udyam Suraksha"
+                        title: "Laghu Udyam Suraksha",
+                        url: "pi-9"
                     },
                     {
-                        title: "Fire Policy"
+                        title: "Fire Policy",
+                        url: "pi-10"
                     },
                     {
-                        title: "Fire Loss of Profit Policy"
+                        title: "Fire Loss of Profit Policy",
+                        url: "pi-11"
                     },
                     {
-                        title: "Machinery Breakdown Policy"
+                        title: "Machinery Breakdown Policy",
+                        url: "pi-12"
                     },
                 ]
             },
@@ -77,9 +95,11 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "General Insurance Companies",
+                        url: "gi-1"
                     },
                     {
                         title: "Life Insurance Companies",
+                        url: "gi-1"
                     },
                 ]
             },
@@ -87,16 +107,53 @@ export const menuItems = [
                 title: "Employee's/People Insurance",
                 submenu: [
                     {
-                        title: "Overview",
+                        title: "Griha Raksha Policy",
+                        url: "pi-1"
                     },
                     {
-                        title: "Our Services",
+                        title: "Sookshma Udyam Suraksha",
+                        url: "pi-2"
                     },
                     {
-                        title: "Why EPOCH",
+                        title: "Laghu Udyam Suraksha",
+                        url: "pi-3"
                     },
                     {
-                        title: "EPOCH Advantage",
+                        title: "Fire Policy",
+                        url: "pi-4"
+                    },
+                    {
+                        title: "Fire Loss of Profit Policy",
+                        url: "pi-5"
+                    },
+                    {
+                        title: "Machinery Breakdown Policy",
+                        url: "pi-6"
+                    },
+
+                    {
+                        title: "Griha Raksha Policy",
+                        url: "pi-7"
+                    },
+                    {
+                        title: "Sookshma Udyam Suraksha",
+                        url: "pi-8"
+                    },
+                    {
+                        title: "Laghu Udyam Suraksha",
+                        url: "pi-9"
+                    },
+                    {
+                        title: "Fire Policy",
+                        url: "pi-10"
+                    },
+                    {
+                        title: "Fire Loss of Profit Policy",
+                        url: "pi-11"
+                    },
+                    {
+                        title: "Machinery Breakdown Policy",
+                        url: "pi-12"
                     },
                 ]
             },
@@ -104,13 +161,16 @@ export const menuItems = [
                 title: "Liability - Financial Lines Insurance",
                 submenu: [
                     {
-                        title: "Fire Policy"
+                        title: "Laghu Udyam Suraksha",
+                        url: "pi-9"
                     },
                     {
-                        title: "Fire Loss of Profit Policy"
+                        title: "Fire Policy",
+                        url: "pi-10"
                     },
                     {
-                        title: "Machinery Breakdown Policy"
+                        title: "Fire Loss of Profit Policy",
+                        url: "pi-11"
                     },
                 ]
             },
@@ -118,27 +178,22 @@ export const menuItems = [
                 title: "Liability - Casuality Lines Insurance",
                 submenu: [
                     {
-                        title: "Sookshma Udyam Suraksha"
+                        title: "General Insurance Companies",
+                        url: "gi-1"
                     },
                     {
-                        title: "Laghu Udyam Suraksha"
+                        title: "Life Insurance Companies",
+                        url: "gi-1"
                     },
                     {
-                        title: "Fire Policy"
+                        title: "General Insurance Companies",
+                        url: "gi-1"
                     },
                     {
-                        title: "Fire Loss of Profit Policy"
-                    },
-                    {
-                        title: "Machinery Breakdown Policy"
+                        title: "Life Insurance Companies",
+                        url: "gi-1"
                     },
                 ]
-            },
-            {
-                title: "Marine Insurance"
-            },
-            {
-                title: "Aircraft Insurance"
             },
         ]
     },
@@ -147,130 +202,76 @@ export const menuItems = [
         type: "big",
         submenu: [
             {
-                title: "Agriculture"
+                title: "Agriculture",
+                url: "industries-1",
             },
             {
-                title: "Automobile"
+                title: "Automobile",
+                url: "industries-2",
             },
             {
-                title: "Aviation"
+                title: "Aviation",
+                url: "industries-3",
             },
             {
-                title: "Banking & Financial Services"
+                title: "Banking & Financial Services",
+                url: "industries-4",
             },
             {
-                title: "Chemicals & Agro Products"
+                title: "Chemicals & Agro Products",
+                url: "industries-5",
             },
             {
-                title: "Construction"
+                title: "Construction",
+                url: "industries-6",
             },
             {
-                title: "Agriculture"
+                title: "Agriculture",
+                url: "industries-7",
             },
             {
-                title: "Automobile"
+                title: "Automobile",
+                url: "industries-8",
             },
             {
-                title: "Aviation"
+                title: "Aviation",
+                url: "industries-9",
             },
             {
-                title: "Banking & Financial Services"
+                title: "Agriculture",
+                url: "industries-1",
             },
             {
-                title: "Chemicals & Agro Products"
+                title: "Automobile",
+                url: "industries-2",
             },
             {
-                title: "Construction"
+                title: "Aviation",
+                url: "industries-3",
             },
             {
-                title: "Agriculture"
+                title: "Banking & Financial Services",
+                url: "industries-4",
             },
             {
-                title: "Automobile"
+                title: "Chemicals & Agro Products",
+                url: "industries-5",
             },
             {
-                title: "Aviation"
+                title: "Construction",
+                url: "industries-6",
             },
             {
-                title: "Banking & Financial Services"
+                title: "Agriculture",
+                url: "industries-7",
             },
             {
-                title: "Chemicals & Agro Products"
+                title: "Automobile",
+                url: "industries-8",
             },
             {
-                title: "Construction"
-            },
-            {
-                title: "Agriculture"
-            },
-            {
-                title: "Automobile"
-            },
-            {
-                title: "Aviation"
-            },
-            {
-                title: "Banking & Financial Services"
-            },
-            {
-                title: "Chemicals & Agro Products"
-            },
-            {
-                title: "Construction"
-            },
-            {
-                title: "Agriculture"
-            },
-            {
-                title: "Automobile"
-            },
-            {
-                title: "Aviation"
-            },
-            {
-                title: "Banking & Financial Services"
-            },
-            {
-                title: "Chemicals & Agro Products"
-            },
-            {
-                title: "Construction"
-            },
-            {
-                title: "Agriculture"
-            },
-            {
-                title: "Automobile"
-            },
-            {
-                title: "Aviation"
-            },
-            {
-                title: "Banking & Financial Services"
-            },
-            {
-                title: "Chemicals & Agro Products"
-            },
-            {
-                title: "Construction"
-            },
-            {
-                title: "Agriculture"
-            },
-            {
-                title: "Automobile"
-            },
-            {
-                title: "Aviation"
-            },
-            {
-                title: "Banking & Financial Services"
-            },
-            {
-                title: "Chemicals & Agro Products"
-            },
-            {
-                title: "Construction"
+                title: "Aviation",
+                url: "industries-9",
             },
         ]
     },
@@ -278,37 +279,46 @@ export const menuItems = [
         title: "Product",
         submenu: [
             {
-                title: "Property Insurance"
+                title: "Property Insurance",
+                url: "123",
             },
             {
-                title: "Engineering Insurance"
+                title: "Engineering Insurance",
+                url: "123",
             },
             {
-                title: "Employee's/People Insurance"
+                title: "Employee's/People Insurance",
+                url: "123",
             },
             {
-                title: "Liability - Financial Lines Insurance"
+                title: "Liability - Financial Lines Insurance",
+                url: "123",
             },
             {
-                title: "Liability - Casualty Lines Insurance"
+                title: "Liability - Casualty Lines Insurance",
+                url: "123",
             },
             {
-                title: "Marine Insurance"
+                title: "Marine Insurance",
+                url: "123",
             },
         ]
         
     },
     {
         title: "Gallery",
+        url: "gallery",
     },
     {
         title: "Blogs",
+        url: "blogs",
     },
     {
         title: "Login",
         submenu: [
             {
                 title: "Login",
+                url: "blogs",
             },
         ]
     },
@@ -317,9 +327,11 @@ export const menuItems = [
         submenu: [
             {
                 title: "English",
+                url: "en"
             },
             {
                 title: "Hindi",
+                url: "hi",
             },
         ]
     },
