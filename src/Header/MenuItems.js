@@ -1,9 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import DropDown from "./DropDown";
-import Home from "../pages/Home/Home";
-import Overview from "../pages/About/Overview";
 
 const MenuItems = ({ items, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
@@ -69,18 +67,6 @@ const MenuItems = ({ items, depthLevel }) => {
                     <Link to={items.url}>{items.title}</Link>
                 )}
             </li>
-            {/* <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/overview" element={<Overview />} />
-                <Route
-                    path="*"
-                    element={
-                        <main style={{ padding: "1rem" }}>
-                            <p>There's nothing here!</p>
-                        </main>
-                    }
-                />
-            </Routes> */}
         </>
     );
 };

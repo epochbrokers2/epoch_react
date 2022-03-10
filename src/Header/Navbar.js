@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 
 // import { menuItems } from "../menuItems";
 import MenuItems from "./MenuItems";
