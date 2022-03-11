@@ -4,19 +4,24 @@ export const menuItems = [
         submenu: [
             {
                 title: "Overview",
-                url: "/about-us"
+                url: "/about-us",
+                component: "About",
             },
             {
                 title: "Our Services",
-                url: "/about-us/our-services"
+                url: "/about-us/our-services",
+                component: "Services",
+                
             },
             {
                 title: "Why EPOCH",
-                url: "/about-us/why-epoch"
+                url: "/about-us/why-epoch",
+                component: "Why_Epoch",
             },
             {
                 title: "EPOCH Advantage",
-                url: "/about-us/epoch-advantage"
+                url: "/about-us/epoch-advantage",
+                component: "About_advantage",
             },
         ],
     },
@@ -25,11 +30,13 @@ export const menuItems = [
         submenu: [
             {
                 title: "General Insurance Companies",
-                url: "/our-partners/general-insurance-companies"
+                url: "/our-partners/general-insurance-companies",
+                component: "Our_Partner",
             },
             {
                 title: "Life Insurance Companies",
-                url: "/our-partners/life-insurance-companies"
+                url: "/our-partners/life-insurance-companies",
+                component: "Our_Partner",
             },
         ]
     },
@@ -41,52 +48,64 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "Griha Raksha Policy",
-                        url: "/policies/property/griha-raksha-policy"
+                        url: "/policies/property/griha-raksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Sookshma Udyam Suraksha",
-                        url: "/property/sookshma-udyam-suraksha-policy"
+                        url: "/property/sookshma-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Laghu Udyam Suraksha",
-                        url: "/policies/property/laghu-udyam-suraksha-policy"
+                        url: "/policies/property/laghu-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Machinery Breakdown Policy",
-                        url: "/policies/property/machinery-breakdown-policy"
+                        url: "/policies/property/machinery-breakdown-policy",
+                        component: "Policy",
                     },
 
                     {
                         title: "Griha Raksha Policy",
-                        url: "/policies/property/griha-raksha-policy"
+                        url: "/policies/property/griha-raksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Sookshma Udyam Suraksha",
-                        url: "/property/sookshma-udyam-suraksha-policy"
+                        url: "/property/sookshma-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Laghu Udyam Suraksha",
-                        url: "/policies/property/laghu-udyam-suraksha-policy"
+                        url: "/policies/property/laghu-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Machinery Breakdown Policy",
-                        url: "/policies/property/machinery-breakdown-policy"
+                        url: "/policies/property/machinery-breakdown-policy",
+                        component: "Policy",
                     },
                 ]
             },
@@ -95,11 +114,13 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                 ]
             },
@@ -108,43 +129,53 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Policy",
-                        url: "/policies/property/fire-policy"
+                        url: "/policies/property/fire-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                 ]
             },
@@ -153,24 +184,29 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Machinery Breakdown Policy",
-                        url: "/policies/property/machinery-breakdown-policy"
+                        url: "/policies/property/machinery-breakdown-policy",
+                        component: "Policy",
                     },
 
                     {
                         title: "Griha Raksha Policy",
-                        url: "/policies/property/griha-raksha-policy"
+                        url: "/policies/property/griha-raksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Sookshma Udyam Suraksha",
-                        url: "/property/sookshma-udyam-suraksha-policy"
+                        url: "/property/sookshma-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Laghu Udyam Suraksha",
-                        url: "/policies/property/laghu-udyam-suraksha-policy"
+                        url: "/policies/property/laghu-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                 ]
             },
@@ -179,24 +215,29 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "Fire Loss of Profit Policy",
-                        url: "/policies/property/fire-loss-of-profit-policy"
+                        url: "/policies/property/fire-loss-of-profit-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Machinery Breakdown Policy",
-                        url: "/policies/property/machinery-breakdown-policy"
+                        url: "/policies/property/machinery-breakdown-policy",
+                        component: "Policy",
                     },
 
                     {
                         title: "Griha Raksha Policy",
-                        url: "/policies/property/griha-raksha-policy"
+                        url: "/policies/property/griha-raksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Sookshma Udyam Suraksha",
-                        url: "/property/sookshma-udyam-suraksha-policy"
+                        url: "/property/sookshma-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                     {
                         title: "Laghu Udyam Suraksha",
-                        url: "/policies/property/laghu-udyam-suraksha-policy"
+                        url: "/policies/property/laghu-udyam-suraksha-policy",
+                        component: "Policy",
                     },
                 ]
             },
@@ -209,142 +250,177 @@ export const menuItems = [
             {
                 title: "Agriculture",
                 url: "/industries/group-health-insurance-policy",
+                component: "Industry",
             },
             {
                 title: "Automobile",
                 url: "/industries/group-personal-accident-policy",
+                component: "Industry",
             },
             {
                 title: "Aviation",
                 url: "/industries/group-travel-policy",
+                component: "Industry",
             },
             {
                 title: "Banking & Financial Services",
                 url: "/industries/professional-indemnity-policy",
+                component: "Industry",
             },
             {
                 title: "Chemicals & Agro Products",
                 url: "/industries/directors-and-officers-liability-policy",
+                component: "Industry",
             },
             {
                 title: "Construction",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/group-health-insurance-policy",
+                component: "Industry",
             },
             {
                 title: "Automobile",
                 url: "/industries/group-personal-accident-policy",
+                component: "Industry",
             },
             {
                 title: "Aviation",
                 url: "/industries/group-travel-policy",
+                component: "Industry",
             },
             {
                 title: "Banking & Financial Services",
                 url: "/industries/professional-indemnity-policy",
+                component: "Industry",
             },
             {
                 title: "Chemicals & Agro Products",
                 url: "/industries/directors-and-officers-liability-policy",
+                component: "Industry",
             },
             {
                 title: "Construction",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/group-health-insurance-policy",
+                component: "Industry",
             },
             {
                 title: "Automobile",
                 url: "/industries/group-personal-accident-policy",
+                component: "Industry",
             },
             {
                 title: "Aviation",
                 url: "/industries/group-travel-policy",
+                component: "Industry",
             },
             {
                 title: "Banking & Financial Services",
                 url: "/industries/professional-indemnity-policy",
+                component: "Industry",
             },
             {
                 title: "Chemicals & Agro Products",
                 url: "/industries/directors-and-officers-liability-policy",
+                component: "Industry",
             },
             {
                 title: "Construction",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/group-health-insurance-policy",
+                component: "Industry",
             },
             {
                 title: "Automobile",
                 url: "/industries/group-personal-accident-policy",
+                component: "Industry",
             },
             {
                 title: "Aviation",
                 url: "/industries/group-travel-policy",
+                component: "Industry",
             },
             {
                 title: "Banking & Financial Services",
                 url: "/industries/professional-indemnity-policy",
+                component: "Industry",
             },
             {
                 title: "Chemicals & Agro Products",
                 url: "/industries/directors-and-officers-liability-policy",
+                component: "Industry",
             },
             {
                 title: "Construction",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/group-health-insurance-policy",
+                component: "Industry",
             },
             {
                 title: "Automobile",
                 url: "/industries/group-personal-accident-policy",
+                component: "Industry",
             },
             {
                 title: "Aviation",
                 url: "/industries/group-travel-policy",
+                component: "Industry",
             },
             {
                 title: "Banking & Financial Services",
                 url: "/industries/professional-indemnity-policy",
+                component: "Industry",
             },
             {
                 title: "Chemicals & Agro Products",
                 url: "/industries/directors-and-officers-liability-policy",
+                component: "Industry",
             },
             {
                 title: "Construction",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
             {
                 title: "Agriculture",
                 url: "/industries/cyber-crime-policy",
+                component: "Industry",
             },
         ]
     },
@@ -354,26 +430,32 @@ export const menuItems = [
             {
                 title: "Property Insurance",
                 url: "/product/property-insurance",
+                component: "Product",
             },
             {
                 title: "Engineering Insurance",
                 url: "/product/engineering-insurance",
+                component: "Product",
             },
             {
                 title: "Employee's/People Insurance",
                 url: "/product/employees-or-people-insurance",
+                component: "Product",
             },
             {
                 title: "Liability - Financial Lines Insurance",
                 url: "/product/liability-financial-lines-insurance",
+                component: "Product",
             },
             {
                 title: "Liability - Casualty Lines Insurance",
                 url: "/product/liability-casuality-lines-insurance",
+                component: "Product",
             },
             {
                 title: "Marine Insurance",
                 url: "/product/marine-insurance",
+                component: "Product",
             },
         ]
         
@@ -381,10 +463,12 @@ export const menuItems = [
     {
         title: "Gallery",
         url: "/gallery",
+        component: "Gallery",
     },
     {
         title: "Blogs",
         url: "/blogs",
+        component: "Blogs",
     },
     {
         title: "Login",
@@ -392,6 +476,7 @@ export const menuItems = [
             {
                 title: "Login",
                 url: "/login",
+                component: "Login",
             },
         ]
     },
@@ -400,11 +485,13 @@ export const menuItems = [
         submenu: [
             {
                 title: "English",
-                url: "/en"
+                url: "/en",
+                component: "L_English",
             },
             {
                 title: "Hindi",
                 url: "/hi",
+                component: "L_Hindi",
             },
         ]
     },
