@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,useLocation  } from "react-router-dom";
 import "../assets/css/compiled-css/App.css"
 import Header from "./Header";
 import SubRouting from "./SubRouting";
@@ -19,13 +19,14 @@ import L_English from "../pages/Language/L_English"
 import L_Hindi from "../pages/Language/L_Hindi"
 
 function Routing({menuItems}) {
-    // console.log(menuItems);    
+    // console.log(menuItems);   
+    
     return (
         <>
             <Router>
                 <Header menuItems={menuItems} />
                 <Routes>
-                    {
+                    {/* {
                         menuItems.submenu ? (
                             <>
                             {console.log(menuItems)}
@@ -38,13 +39,23 @@ function Routing({menuItems}) {
                             </>
                             
                         )
-                    }
-                    {/* <Route path="/" element={<Home />} />
-                    <Route exact path="about-us" element={<About />}>
-                        <Route  path="our-services" element={<Services />}
-                        />
-                    </Route>
-                    <Route path="/policies/property/:slug" element={<Policy />} /> */}
+                    } */}
+                    <Route path="/" element={<Home />} />
+                    <Route exact path="/about-us" element={<About />} />
+                    <Route  path="/about-us/our-services" element={<Services />} />
+                    <Route  path="/about-us/why-epoch" element={<Why_Epoch />} />
+                    <Route  path="/about-us/epoch-advantage" element={<About_advantage />} />
+                    <Route  path="/our-partners/*" element={<Our_Partner />} />
+                    <Route  path="/policies/*" element={<Policy />} />
+                    <Route  path="/industries/*" element={<Industry />} />
+                    <Route  path="/product/*" element={<Product />} />
+                    <Route  path="/gallery" element={<Gallery />} />
+                    <Route  path="/blogs" element={<Blogs />} />
+                    <Route  path="/login" element={<Login />} />
+                    <Route  path="/language/en" element={<L_English />} />
+                    <Route  path="/language/hi" element={<L_Hindi />} />
+
+                    {/* <Route path="/policies/property/:slug" element={<Policy />} /> */}
                     <Route
                         path="*"
                         element={

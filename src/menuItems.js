@@ -485,12 +485,12 @@ export const menuItems = [
         submenu: [
             {
                 title: "English",
-                url: "/en",
+                url: "/language/en",
                 component: "L_English",
             },
             {
                 title: "Hindi",
-                url: "/hi",
+                url: "/language/hi",
                 component: "L_Hindi",
             },
         ]

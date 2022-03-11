@@ -5,7 +5,7 @@ function Policy() {
     const params = useParams();
     // console.log(params)
   return (
-    <div>Product: {params.slug}</div>
+    <div>Product</div>
   )
 }
 
