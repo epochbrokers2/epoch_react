@@ -1,41 +1,15 @@
-/* ubuntu-regular - latin */
-// @font-face {
-//     font-family: 'Ubuntu';
-//     font-display: swap;
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url('../fonts/ubuntu/ubuntu-v15-latin-regular.eot'); /* IE9 Compat Modes */
-//     src: local(''),
-//          url('../fonts/ubuntu/ubuntu-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//          url('../fonts/ubuntu/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-//          url('../fonts/ubuntu/ubuntu-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-//          url('../fonts/ubuntu/ubuntu-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-//          url('../fonts/ubuntu/ubuntu-v15-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
-//   }
-//   @font-face {
-//     font-family: 'DINPro-Regular';
-//     font-display: swap;
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url('../fonts/dinpro/DINPro-Regular_13937.eot'); /* IE9 Compat Modes */
-//     src: local(''),
-//          url('../fonts/dinpro/DINPro-Regular_13937.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//          url('../fonts/dinpro/DINPro-Regular_13937.woff') format('woff'), /* Modern Browsers */
-//          url('../fonts/dinpro/DINPro-Regular_13937.ttf') format('truetype'), /* Safari, Android, iOS */
-//          url('../fonts/dinpro/DINPro-Regular_13937.svg#Ubuntu') format('svg'); /* Legacy iOS */
-//   }
-  $main-background: #fff;
-  $container-width: 1140px;
-  $red-color: #ec3237;
-  $text-color-primary: #5f5f5f;
-  $heading-font: 'Ubuntu', sans-serif;
-  $para-font: 'DINPro-Regular', sans-serif;
-  @mixin flex-property($flex-direction) {
+$main-background: #fff;
+$container-width: 1140px;
+$red-color: #ec3237;
+$text-color-primary: #5f5f5f;
+$heading-font: "Ubuntu", sans-serif;
+$para-font: "DINPro-Regular", sans-serif;
+@mixin flex-property($flex-direction) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: $flex-direction;
-  }
-  @mixin select_dropdown {
+}
+@mixin select_dropdown {
     display: inline-block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -46,82 +20,87 @@
     color: #495057;
     vertical-align: middle;
     background: #fff
-      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
-      right 0.75rem center/8px 10px no-repeat;
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+        right 0.75rem center/8px 10px no-repeat;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     appearance: none;
-  }
-  @mixin mobile {
+}
+@mixin mobile {
     @media screen and (max-width: 767.98px) {
-      @content;
+        @content;
     }
-  }
-  @mixin sm-to-md {
+}
+@mixin sm-to-md {
     @media screen and (max-width: 991px) and (min-width: 768px) {
-      @content;
+        @content;
     }
-  }
-  @mixin to-md  {
+}
+@mixin to-md {
     @media screen and (max-width: 991px) {
-      @content;
+        @content;
     }
-  }
-  @mixin nav-small  {
+}
+@mixin nav-small {
     @media screen and (max-width: 1100px) {
-      @content;
+        @content;
     }
-  }
-  @mixin media-md {
+}
+@mixin media-md {
     @media screen and (min-width: 768px) {
-      @content;
+        @content;
     }
-  }
-  @mixin media-lg {
+}
+@mixin media-lg {
     @media screen and (min-width: 992px) {
-      @content;
+        @content;
     }
-  }
-  @mixin media-xl {
+}
+@mixin media-xl {
     @media screen and (min-width: 1600px) {
-      @content;
+        @content;
     }
-  }
-  @mixin container-wid {
+}
+@mixin container-wid {
     @media screen and (max-width: 1225px) and (min-width: 992px) {
-      @content;
+        @content;
     }
-  }
-  *,
-  ::after,
-  ::before {
+}
+*,
+::after,
+::before {
     box-sizing: border-box;
-  }
-  html {
+}
+html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-  }
-  .container {
+}
+.container {
     width: $container-width;
     margin: 0 auto;
     @include to-md {
-      width: 100%;
-      padding: 0 15px;
+        width: 100%;
+        padding: 0 15px;
     }
     @include container-wid {
-      width: 100%;
-      padding: 0 50px;
+        width: 100%;
+        padding: 0 50px;
     }
-  }
-  .row {
+}
+.row {
     @include flex-property(row);
     @include to-md {
-      margin: 0;
+        margin: 0;
     }
-  }
-  input, textarea, select, option {font-family: $para-font;}
-  .equal-grid {
+}
+input,
+textarea,
+select,
+option {
+    font-family: $para-font;
+}
+.equal-grid {
     position: relative;
     flex-basis: 0;
     flex-grow: 1;
@@ -129,8 +108,8 @@
     margin: 10px 0;
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .global_btn {
+}
+.global_btn {
     background: $red-color;
     color: #fff;
     padding: 0.375rem 1rem;
@@ -146,100 +125,116 @@
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     cursor: pointer;
-    &:hover {background: darken($color: $red-color, $amount: 15%);}
-  }
-  dl,
-  ol,
-  ul {
+    &:hover {
+        background: darken($color: $red-color, $amount: 15%);
+    }
+}
+dl,
+ol,
+ul {
     margin: 0;
-  }
-  img {
+}
+img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-  }
-  h1 {
+}
+h1 {
     font-size: 2.5rem;
     @include mobile {
-      font-size: 1.4rem;
-      line-height: 2rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
-  }
-  h2 {
+}
+h2 {
     font-size: 1.75rem;
-    span {color: $red-color;}
-  }
-  h3 {
+    span {
+        color: $red-color;
+    }
+}
+h3 {
     font-size: 1.4rem;
-  }
-  h1, h2, h3, h4, h5, h6 {margin: 0;font-family: $heading-font}
-  a {
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: $heading-font;
+}
+a {
     color: $red-color;
     text-decoration: none;
     background-color: transparent;
     text-decoration: none;
     cursor: pointer;
-  }
-  a:hover {
+}
+a:hover {
     color: #cd393f;
-  }
-  [class*="col-"] {
+}
+[class*="col-"] {
     padding: 0 10px;
-  }
-  p,
-  ul,
-  li {
+}
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
-  }
-  p {color: $text-color-primary;font-size: 15px;line-height: 1.8;}
-  body {
+}
+p {
+    color: $text-color-primary;
+    font-size: 15px;
+    line-height: 1.8;
+}
+body {
     padding: 0;
     margin: 0;
     font-size: 15px;
     font-family: $para-font;
     color: #5f5f5f;
-  }
-  .col-8 {
+}
+.col_8 {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
     @include sm-to-md {
-      flex: 0 0 50%;
-      max-width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
     @include mobile {
-      flex: 0 0 100%;
-      max-width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-  }
-  .col-4 {
+}
+.col_4 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     @include sm-to-md {
-      flex: 0 0 50%;
-      max-width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
     @include mobile {
-      flex: 0 0 100%;
-      max-width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-  }
-  .col-5 {
+}
+.col-5 {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
     @include mobile {
-      flex: 0 0 100%;
-      max-width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-  }
-  .col-7 {
+}
+.col-7 {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
     @include mobile {
-      flex: 0 0 100%;
-      max-width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-  }
-  
+}

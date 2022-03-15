@@ -713,10 +713,10 @@ footer {
     }
 }
 
-.first-fold {
+.first_fold {
     position: relative;
     padding: 1rem 0;
-    .banner-left {
+    .banner_left {
         @include mobile {
             margin-bottom: 2rem;
         }

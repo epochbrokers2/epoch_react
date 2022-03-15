@@ -8,7 +8,6 @@ function App() {
     return (
         <React.Fragment>
             <Routing menuItems={menuItems} />
-            {/* <Home /> */}
         </React.Fragment>
     );
 }

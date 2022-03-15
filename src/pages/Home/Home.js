@@ -1,23 +1,14 @@
 import React from "react";
-import "../../assets/css/compiled-css/home.css";
-import PolicyTabs from "./PolicyTabs";
-import Panel from "./Panel";
-const data = [
-    { id: "1", tabTitle: "Individual Insurance", img_name: "Individual1", tabContent: "1" },
-    { id: "2", tabTitle: "Group Insurance",img_name: "Group-Insurance", tabContent: "2" },
-    { id: "3", tabTitle: "Commercial Insurance",img_name: "Commercial-Insurance", tabContent: "3" },
-    { id: "4", tabTitle: "Package Insurance",img_name: "Package-Insurance", tabContent: "4" },
-    { id: "5", tabTitle: "Affinity Insurance",img_name: "Affinity-Insurance", tabContent: "5" },
-    { id: "6", tabTitle: "Rural & Agricultural Insurance",img_name: "Rural-&-Agricultural-Insurance", tabContent: "6" },
-];
+import styles from "../../assets/css/compiled-css/home.module.css";
+import HomePolicy from "./HomePolicy";
 function Home() {
     return (
         <>
-            <section className="first-fold">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-8">
-                            <div className="banner-left">
+            <section className={styles.first_fold}>
+                <div className={styles.container}>
+                    <div className={styles.row}>
+                        <div className={styles.col_8}>
+                            <div className={styles.banner_left}>
                                 <h1>
                                     No one can predict the future.
                                     <br /> But we can surely{" "}
@@ -26,8 +17,8 @@ function Home() {
                                 <p>Security is a priority, not an option.</p>
                             </div>
                         </div>
-                        <div className="col-4">
-                            <div className="banner-right">
+                        <div className={styles.col_4}>
+                            <div className={styles.banner_right}>
                                 <img
                                     src="/images/img/banner-img-five.webp"
                                     alt="Epcoh Insurance Brokers Private Ltd."
@@ -37,12 +28,12 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <PolicyTabs data={data}/>
-            <section className="home_about">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-8">
-                            <div className="home_about_left">
+            <HomePolicy />
+            <section className={styles.home_about}>
+                <div className={styles.container}>
+                    <div className={styles.row}>
+                        <div className={styles.col_8}>
+                            <div className={styles.home_about_left}>
                                 <h2>
                                     Know <span>About Us? </span>{" "}
                                 </h2>
@@ -59,13 +50,13 @@ function Home() {
                                     professionals from diverse business.{" "}
                                     <a href="/about-us/">Read more</a>
                                 </p>
-                                <div className="home_about_left_head">
+                                <div className={styles.home_about_left_head}>
                                     EPOCH is one of India’s leading Insurance
                                     broker
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className={styles.col_4}>
                             <img
                                 src="/images/img/about-img.webp"
                                 alt="Epoch About page"
@@ -74,242 +65,242 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="services_home">
-                <div className="container">
+            <section className={styles.services_home}>
+                <div className={styles.container}>
                     <h2>
                         <span>Our Services</span>
                     </h2>
-                    <div className="row">
-                        <div className="services_home_main">
-                            <div className="services_home_main_box">
-                                <div className="img-div">
+                    <div className={styles.row}>
+                        <div className={styles.services_home_main}>
+                            <div className={styles.services_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/services/ourservices1.webp"
                                         alt="Claim Advisory & Consultancy Services"
                                     />
                                 </div>
-                                <div className="services_home_main_box_head">
+                                <div className={styles.services_home_main_box_head}>
                                     Claim Advisory & Consultancy Services
                                 </div>
                             </div>
-                            <div className="services_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.services_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/services/ourservices2.webp"
                                         alt="Insurance Placement"
                                     />
                                 </div>
-                                <div className="services_home_main_box_head">
+                                <div className={styles.services_home_main_box_head}>
                                     Insurance Placement
                                 </div>
                             </div>
-                            <div className="services_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.services_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/services/ourservices3.webp"
                                         alt="Portfolio Assessment"
                                     />
                                 </div>
-                                <div className="services_home_main_box_head">
+                                <div className={styles.services_home_main_box_head}>
                                     Portfolio Assessment
                                 </div>
                             </div>
-                            <div className="services_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.services_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/services/ourservices4.webp"
                                         alt="Risk Inspection"
                                     />
                                 </div>
-                                <div className="services_home_main_box_head">
+                                <div className={styles.services_home_main_box_head}>
                                     Risk Inspection
                                 </div>
                             </div>
-                            <div className="services_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.services_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/services/ourservices5.webp"
                                         alt="Valuation Services"
                                     />
                                 </div>
-                                <div className="services_home_main_box_head">
+                                <div className={styles.services_home_main_box_head}>
                                     Valuation Services
                                 </div>
                             </div>
-                            <div className="hr_line_dotted"></div>
+                            <div className={styles.hr_line_dotted}></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="choose_home">
-                <div className="container">
+            <section className={styles.choose_home}>
+                <div className={styles.container}>
                     <h2>Why Choose Us?</h2>
-                    <div className="row">
-                        <div className="choose_home_main">
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                    <div className={styles.row}>
+                        <div className={styles.choose_home_main}>
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose1.webp"
                                         alt="Professional & Experienced Team"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Professional & Experienced Team
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose2.webp"
                                         alt="Customized Solutions"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Customized Solutions
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose3.webp"
                                         alt="Strong Relationship With Insurance Companies"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Strong Relationship With Insurance Companies
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose4.webp"
                                         alt="Service Commitment ONTIME EVERYTIME"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Service Commitment ONTIME EVERYTIME
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose5.webp"
                                         alt="Technological Edge"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Technological Edge
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose6.webp"
                                         alt="Additional Services Offered"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Additional Services Offered
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose7.webp"
                                         alt="Competitive Premium"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Competitive Premium
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="choose_home_main_box">
-                                <div className="red_circle">
+                            <div className={styles.choose_home_main_box}>
+                                <div className={styles.red_circle}>
                                     <img
                                         src="/images/img/choose/whychoose8.webp"
                                         alt="Single Window Solution"
                                     />
                                 </div>
-                                <div className="choose_head">
+                                <div className={styles.choose_head}>
                                     Single Window Solution
                                 </div>
-                                <div className="line_top_left"></div>
+                                <div className={styles.line_top_left}></div>
                             </div>
-                            <div className="line_top_dot"></div>
+                            <div className={styles.line_top_dot}></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="advantage_home">
-                <div className="container">
+            <section className={styles.advantage_home}>
+                <div className={styles.container}>
                     <h2>
                         <span>Epoch Advantage</span>
                     </h2>
-                    <div className="row">
-                        <div className="advantage_home_main">
-                            <div className="advantage_home_main_box">
-                                <div className="img-div">
+                    <div className={styles.row}>
+                        <div className={styles.advantage_home_main}>
+                            <div className={styles.advantage_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/advantage/epoch-aadvantage1.webp"
                                         alt="Ocean of Knowledge"
                                     />
                                 </div>
-                                <div className="advantage_home_main_box_head">
+                                <div className={styles.advantage_home_main_box_head}>
                                     Ocean of Knowledge
                                 </div>
                             </div>
-                            <div className="advantage_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.advantage_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/advantage/epoch-aadvantage2.webp"
                                         alt="Fast, Secure & Reliable"
                                     />
                                 </div>
-                                <div className="advantage_home_main_box_head">
+                                <div className={styles.advantage_home_main_box_head}>
                                     Fast, Secure & Reliable
                                 </div>
                             </div>
-                            <div className="advantage_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.advantage_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/advantage/epoch-aadvantage3.webp"
                                         alt="Best in industry Deals"
                                     />
                                 </div>
-                                <div className="advantage_home_main_box_head">
+                                <div className={styles.advantage_home_main_box_head}>
                                     Best in industry Deals
                                 </div>
                             </div>
-                            <div className="advantage_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.advantage_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/advantage/epoch-aadvantage4.webp"
                                         alt="Seamless Systematic Portfolio Assesssment"
                                     />
                                 </div>
-                                <div className="advantage_home_main_box_head">
+                                <div className={styles.advantage_home_main_box_head}>
                                     Seamless Systematic Portfolio Assesssment
                                 </div>
                             </div>
-                            <div className="advantage_home_main_box">
-                                <div className="img-div">
+                            <div className={styles.advantage_home_main_box}>
+                                <div className={styles.img_div}>
                                     <img
                                         src="/images/img/advantage/epoch-aadvantage5.webp"
                                         alt="Exclusive Claim Asisstance Programs"
                                     />
                                 </div>
-                                <div className="advantage_home_main_box_head">
+                                <div className={styles.advantage_home_main_box_head}>
                                     Exclusive Claim Asisstance Programs
                                 </div>
                             </div>
-                            <div className="hr_line_dotted"></div>
+                            <div className={styles.hr_line_dotted}></div>
                         </div>
                     </div>
                 </div>
