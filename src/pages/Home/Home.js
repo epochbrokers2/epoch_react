@@ -28,7 +28,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <HomePolicy />
+            {/* <HomePolicy /> */}
             <section className={styles.home_about}>
                 <div className={styles.container}>
                     <div className={styles.row}>

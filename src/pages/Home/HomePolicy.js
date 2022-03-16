@@ -1,6 +1,5 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import styles from "../../assets/css/compiled-css/home.module.css";
 
 const data = [
     { id: "1", tabTitle: "Individual Insurance", img_name: "Individual1" },
@@ -24,19 +23,19 @@ function HomePolicy() {
         <section className="slider_policy_main">
             <div className="container">
                 <Tabs className="Tabs">
-                    <TabList>
+                    <TabList className="slider_policy">
                         {data.map((item) => (
-                            <Tab className={styles.slider_policy_tab}>
-                                <div className={styles.img_div}>
+                            <Tab key={item.id} className="slider_policy_tab">
+                                <div className="img_div">
                                     <img
                                         src={`images/img/policy/${item.img_name}.webp`}
                                         alt={item.img_name}
                                     />
                                 </div>
-                                <div className={styles.slider_policy_tab_head}>
+                                <div className="slider_policy_tab_head">
                                     {item.tabTitle}
                                 </div>
-                                <div className={styles.slider_policy_tab_buy}>
+                                <div className="slider_policy_tab_buy">
                                     Compare / Buy
                                 </div>
                             </Tab>

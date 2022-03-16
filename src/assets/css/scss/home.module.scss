@@ -1,7 +1,9 @@
 @import "./main";
 @import "./slick";
-.about {color: red}
-.home_policy {
+.about {
+    color: red;
+}
+.slider_policy_main {
     position: relative;
     margin: 3rem 0;
     &_tab {
@@ -12,52 +14,55 @@
         width: 100%;
         text-align: center;
         .tab-title {
-          flex: 1;
-          &:first-child .img_div {
-            background-color: #f9a83a;
-          }
-          &:nth-child(2) .img_div {
-              background-color: #a2c022;
-          }
-          &:nth-child(3) .img_div {
-              background-color: #10c5c7;
-          }
-          &:nth-child(4) .img_div {
-              background-color: #e35c41;
-          }
-          &:nth-child(5) .img_div {
-              background-color: #40a8f2;
-          }
-          &:nth-child(6) .img_div {
-              background-color: #81561f;
-          }
-          .img_div {
-            margin: 0 auto 1rem;
-            border: 2px solid;
-            border-radius: 50%;
-            padding: 10px;
-            display: inline-block;
-            img {
-              width: 70px;
-              height: 70px;
+            flex: 1;
+            &:first-child .img_div {
+                background-color: #f9a83a;
             }
-          }
-          &_head {
-            line-height: 20px;
-            font-size: 16px;
-            color: #5f5f5f;
-          }
-          &_buy {
-            margin: 5px 0 8px;
-            font-size: 18px;
-          }
-          &.tab-title--active {
+            &:nth-child(2) .img_div {
+                background-color: #a2c022;
+            }
+            &:nth-child(3) .img_div {
+                background-color: #10c5c7;
+            }
+            &:nth-child(4) .img_div {
+                background-color: #e35c41;
+            }
+            &:nth-child(5) .img_div {
+                background-color: #40a8f2;
+            }
+            &:nth-child(6) .img_div {
+                background-color: #81561f;
+            }
             .img_div {
-              background-color: transparent;
-              border: 2px solid $red-color;
+                margin: 0 auto 1rem;
+                border: 2px solid;
+                border-radius: 50%;
+                padding: 10px;
+                display: inline-block;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
             }
-            .tab-title_head, .tab-title_buy {color: $red-color;}
-          }
+            &_head {
+                line-height: 20px;
+                font-size: 16px;
+                color: #5f5f5f;
+            }
+            &_buy {
+                margin: 5px 0 8px;
+                font-size: 18px;
+            }
+            &.tab-title--active {
+                .img_div {
+                    background-color: transparent;
+                    border: 2px solid $red-color;
+                }
+                .tab-title_head,
+                .tab-title_buy {
+                    color: $red-color;
+                }
+            }
         }
     }
     &_category {
@@ -79,7 +84,7 @@
                     flex: 0 0 50%;
                     margin-bottom: 1rem;
                 }
-                
+
                 .policy_cat_details {
                     .poly_img_div {
                         margin: 0 auto 1rem;
