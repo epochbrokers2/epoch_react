@@ -3,7 +3,7 @@ import "../../assets/css/compiled-css/about.css"
 
 function About() {
   return (
-    <div className=".about">About</div>
+    <div className="about">About</div>
   )
 }
 
