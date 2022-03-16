@@ -1,8 +1,9 @@
 import React from 'react'
+import "../../assets/css/compiled-css/overview.css"
 
 function About_advantage() {
   return (
-    <div>About_advantage</div>
+    <div className='overview'>About_advantage</div>
   )
 }
 

@@ -42,7 +42,7 @@ function HomePolicy() {
                             </Tab>
                         ))}
                     </TabList>
-                    <TabPanel>
+                    <TabPanel  className="overview">
                         <p>Tab 1 works!</p>
                     </TabPanel>
                     <TabPanel>

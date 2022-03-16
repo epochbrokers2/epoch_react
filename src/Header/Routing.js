@@ -24,8 +24,8 @@ function Routing({menuItems}) {
             <Router>
                 <Header menuItems={menuItems} />
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route exact path="/about-us" element={<About />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route  path="/about-us" element={<About />} />
                     <Route  path="/about-us/our-services" element={<Services />} />
                     <Route  path="/about-us/why-epoch" element={<Why_Epoch />} />
                     <Route  path="/about-us/epoch-advantage" element={<About_advantage />} />
